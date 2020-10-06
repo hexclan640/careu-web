@@ -1,0 +1,50 @@
+.header {
+  padding: 30px 15px 15px 15px;
+  background-color: rgb(91, 17, 1 ,0.8);
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.logo{
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 10%;
+}
+
+.name1{
+	display: inline-block;
+	font-family: sans-serif;
+	color: #FF8C00;
+	margin: 0px;
+  	font-size: 300%;
+}
+
+.name2{
+	display: inline-block;
+	color: #FF8C00;
+	margin: 0px;
+  	font-size: 500%;
+}
+
+.nameLogo{
+	float: left;
+	text-shadow: 4px 4px 4px black;
+}
+
+.options{
+	float: right;
+	padding: 95px 0px 0px 20px;
+}
+
+.options td,a{
+	text-shadow: 4px 4px 4px black;
+	text-align: right;
+	text-decoration: none;
+	font-size: 110%;
+	color: white;
+}
+
+.header a:hover{
+  color: #F4A460;
+}

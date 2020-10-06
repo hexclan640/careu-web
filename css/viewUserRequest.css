@@ -1,0 +1,72 @@
+body{
+	background-image: url("../img/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	background-attachment: fixed;
+}
+
+.breadcrum{
+	color: white;
+	background-color: rgb(128,0,0,0.9);
+	padding: 5px 0px 5px 10px;
+}
+
+.request{
+	background-color: rgb(255,255,255,0.6);
+	margin: 10px;
+	padding:10px;
+	height: 400px;
+}
+
+.request .reqDetails{
+	background-color: rgb(192,192,192,0.7);
+	text-align: center;
+	font-size: 130%;
+	margin: 30px;px;
+	height: 250px;
+}
+
+.request h2{
+	margin:10px;
+}
+
+.request .verify .accept{
+	float: right;
+	text-align: center;
+    width: 10%;
+    background-color: rgb(0,191,255,0.6);
+    border: 1px solid black;
+    padding: 11px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+    font-size: 100%;
+    margin-right: 30px;
+}
+
+.request .verify .cancel{
+	float: right;
+	text-align: center;
+    width: 10%;
+    background-color: rgb(255,0,0,0.6);
+    border: 1px solid black;
+    padding: 11px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+    font-size: 100%;
+    margin-right: 30px;
+}
+
+.request .verify .accept:hover{
+	background-color: rgb(0,191,255,0.9);
+}
+
+.request .verify .cancel:hover{
+	background-color: rgb(255,0,0,0.9);
+}
