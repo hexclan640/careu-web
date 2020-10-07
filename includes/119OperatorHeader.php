@@ -3,15 +3,14 @@
 			<img src="../../img/appLogo.png" class="logo">
 			<p class="name1"><b>care</b></p><p class="name2"><b>U</b></p>
 		</div>
+		<div class="service">
+			Emergency Police Service<br>119
+		</div>
 		<div class="options">
 			<table>
 				<tr>
 					<td>
 						<a href="home.php">HOME</a>
-					</td>
-					<td>|</td>
-					<td>
-						<a href="editProfileAdmin.php">EDIT PROFILE</a>
 					</td>
 					<td>|</td>
 					<td>

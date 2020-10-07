@@ -3,9 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/jpg" href="../../img/appLogo.png"/>
-	<link rel="stylesheet" type="text/css" href="../../css/create1990OperatorAccount.css">
-	<link rel="stylesheet" type="text/css" href="../../css/adminHeader.css">
-	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../../css/admin/create1990OperatorAccount.css">
+	<link rel="stylesheet" type="text/css" href="../../css/admin/adminHeader.css">
+	<link rel="stylesheet" type="text/css" href="../../includecss/footer.css">
 	<title>1990 Operator Account</title>
 </head>
 <body>

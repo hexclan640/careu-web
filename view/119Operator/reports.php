@@ -5,13 +5,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/jpg" href="../../img/appLogo.png"/>
-	<link rel="stylesheet" type="text/css" href="../../css/admin/reports.css">
-	<link rel="stylesheet" type="text/css" href="../../css/admin/adminHeader.css">
+	<link rel="stylesheet" type="text/css" href="../../css/119Operator/reports.css">
+	<link rel="stylesheet" type="text/css" href="../../includecss/operatorHeader.css">
 	<link rel="stylesheet" type="text/css" href="../../includecss/footer.css">
 	<title>Reports</title>
 </head>
 <body>
-	<?php include_once('../../includes/adminHeader.php'); ?>
+	<?php include_once('../../includes/119OperatorHeader.php'); ?>
 
 	<div class="breadcrum">
 		Reports

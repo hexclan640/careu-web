@@ -13,7 +13,7 @@
      	{	
      		session_start();
      		$_SESSION['userName']=$userName;
-    		header( "Location:view/admin/home.php" );die;
+    		header( "Location:home.php" );die;
       	}
       	else
       	{

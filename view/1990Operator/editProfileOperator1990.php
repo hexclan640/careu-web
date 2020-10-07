@@ -1,17 +1,17 @@
 <?php include_once('../../includes/connection.php'); ?>
-<?php include_once('../../php/editProfileAdmin.php'); ?>
+<?php include_once('../../php/editProfileOperator1990.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/jpg" href="../../img/appLogo.png"/>
-	<link rel="stylesheet" type="text/css" href="../../css/admin/editProfileAdmin.css">
-	<link rel="stylesheet" type="text/css" href="../../css/admin/adminHeader.css">
+	<link rel="stylesheet" type="text/css" href="../../css/1990Operator/editProfileOperator1990.css">
+	<link rel="stylesheet" type="text/css" href="../../includecss/operatorHeader.css">
 	<link rel="stylesheet" type="text/css" href="../../includecss/footer.css">
 	<title>Edit Profile</title>
 </head>
 <body>
-	<?php include_once('../../includes/adminHeader.php'); ?>
+	<?php include_once('../../includes/1990operatorHeader.php'); ?>
 
 	<div class="breadcrum">
 		Edit Profile
@@ -19,7 +19,7 @@
 
 	<div class="form">
 		<center>
-			<form action="editProfileAdmin.php" method="post">
+			<form action="editProfileOperator1990.php" method="post">
 				<table class="info">
 					<tr>
 						<td class="proPic">
