@@ -15,7 +15,7 @@
 					</td>
 					<td>|</td>
 					<td>
-						<a href="index.php">LOG OUT</a>
+						<a href="../../">LOG OUT</a>
 					</td>
 				</tr>
 			</table>
@@ -24,3 +24,4 @@
 	<?php include_once('../../js/jquery.js') ?>
 	<?php include_once('../../js/sticky.js') ?>
 	<script type="text/javascript" src="../../js/navigation.js"></script>
+	

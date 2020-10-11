@@ -19,7 +19,7 @@
 
 	<div class="form">
 		<center>
-			<form action="editProfileOperator119.php" method="post">
+			<form method="post" id="editProfile">
 				<table class="info">
 					<tr>
 						<td class="proPic">
@@ -32,15 +32,17 @@
 							<label>Re-enter Password</label><br>
 						</td>
 						<td class="inputs">
-							<input type="text" name="firstName" value="<?php echo $records['firstName']; ?>"><br>
-							<input type="text" name="lastName" value="<?php echo $records['lastName']; ?>"><br>
-							<input type="password" name="password1" value="<?php echo $records['password']; ?>"><br>
-							<input type="password" name="password2" value="<?php echo $records['password']; ?>"><br>
+							<input type="text" name="firstName" id="firstName" value="<?php echo $records['firstName']; ?>"><br>
+							<input type="text" name="lastName" id="lastName" value="<?php echo $records['lastName']; ?>"><br>
+							<input type="password" name="password1" id="password1"value="<?php echo $records['password']; ?>"><br>
+							<input type="password" name="password2" id="password2" value="<?php echo $records['password']; ?>"><br>
+							<p class="hidden" id="error1">Passwords do not match!</p>
+							<p class="hidden" id="error2">Please, fill the password feilds!</p>
 						</td>
 					</tr>
 					<tr class="save">
 						<td colspan="3">
-							<input type="submit" value="Save" name="submit">
+							<input type="submit" value="Save" name="submit" id="submit">
 						</td>
 					</tr>
 				</table>
@@ -49,5 +51,6 @@
 	</div>
 
 	<?php include_once('../../includes/footer.php'); ?>
+	<script type="text/javascript" src="../../js/editProfile.js"></script>
 </body>
 </html>

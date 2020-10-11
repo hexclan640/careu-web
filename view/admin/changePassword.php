@@ -30,5 +30,7 @@
 			</div>
 		</center>
 	</div>
+	<script type="text/javascript" src="../../js/changePassword.js"></script>
+	<!-- <?php include_once('../../js/changePassword.js'); ?> -->
 </body>
 </html>

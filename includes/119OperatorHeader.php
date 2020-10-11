@@ -14,7 +14,7 @@
 					</td>
 					<td>|</td>
 					<td>
-						<a href="index.php">LOG OUT</a>
+						<a href="../../">LOG OUT</a>
 					</td>
 				</tr>
 			</table>

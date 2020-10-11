@@ -6,6 +6,14 @@ body{
 	background-attachment: fixed;
 }
 
+#error1,#error2{
+    color: red;
+}
+
+.hidden{
+	display: none;
+}
+
 .breadcrum{
 	color: white;
 	background-color: rgb(128,0,0,0.9);
