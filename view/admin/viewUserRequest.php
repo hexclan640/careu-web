@@ -1,5 +1,6 @@
 <?php include_once('../../includes/connection.php'); ?>
 <?php include_once('../../php/editProfileAdmin.php'); ?>
+<?php include_once('../../php/admin/viewUserRequests.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,20 +15,99 @@
 	<?php include_once('../../includes/adminHeader.php'); ?>
 
 	<div class="breadcrum">
-		Edit Profile
+		Request
 	</div>
 
 	<div class="request">
-		<h2>Request <?php echo $_GET['id']; ?></h2>
+		<?php echo "<h2>".$row["firstName"]." ".$row["lastName"]."</h2>"; ?>
 		<div class="reqDetails">
-			Request Details
+			<?php
+				echo '<table>';
+
+					echo '<tr>';
+						echo '<td>';
+							echo "<b>E-mail</b>";
+						echo '</td>';
+						echo '<td>';
+							echo $row["email"];
+						echo '</td>';
+					echo '</tr>';
+
+					echo '<tr>';
+						echo '<td>';
+							echo "<b>NIC</b>";
+						echo '</td>';
+						echo '<td>';
+							echo $row["NIC"];
+						echo '</td>';
+					echo '</tr>';
+
+					echo '<tr>';
+						echo '<td>';
+							echo "<b>Phone Number</b>";
+						echo '</td>';
+						echo '<td>';
+							echo $row["phoneNumber"];
+						echo '</td>';
+					echo '</tr>';
+
+					echo '<tr>';
+						echo '<td>';
+							echo "<b>Address</b>";
+						echo '</td>';
+						echo '<td>';
+							echo $row["address"];
+						echo '</td>';
+					echo '</tr>';
+
+					echo '<tr>';
+						echo '<td>';
+							echo "<b>Relative 1</b>";
+						echo '</td>';
+						echo '<td>';
+							echo $row["relative1"];
+							echo "<br>";
+							echo $row["relativePhone1"];
+						echo '</td>';
+					echo '</tr>';
+
+					echo '<tr>';
+						echo '<td>';
+							echo "<b>Relative 2</b>";
+						echo '</td>';
+						echo '<td>';
+							echo $row["relative2"];
+							echo "<br>";
+							echo $row["relativePhone2"];
+						echo '</td>';
+					echo '</tr>';
+
+					echo '<tr>';
+						echo '<td>';
+							echo "<b>Relative 3</b>";
+						echo '</td>';
+						echo '<td>';
+							echo $row["relative3"];
+							echo "<br>";
+							echo $row["relativePhone3"];
+						echo '</td>';
+					echo '</tr>';
+
+				echo '</table>';
+			?>
 		</div>
-		<dir class="verify">
-			<a href="" class="cancel">Cancel Request</a>
-			<a href="" class="accept">Accept Request</a>
-		</dir>
+
+		<div class="verify">
+			<form action="viewUserRequest.php?rid=<?php echo $_GET["rid"]; ?>" method="post">
+				<input type="submit" name="reject" class="reject" value="Reject Request">
+				<input type="submit" name="accept" class="accept" value="Accept Request">
+			</form>
+		</div>
+
 	</div>
 
+
 	<?php include_once('../../includes/footer.php'); ?>
+	
 </body>
 </html>
