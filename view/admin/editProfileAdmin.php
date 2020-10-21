@@ -23,7 +23,9 @@
 				<table class="info">
 					<tr>
 						<td class="proPic">
-							<img src="../../img/admin.jpg">
+							<canvas class="picture" id="picture">
+								
+							</canvas>
 						</td>
 						<td class="labels">
 							<label>First Name</label><br>
@@ -52,5 +54,43 @@
 
 	<?php include_once('../../includes/footer.php'); ?>
 	<script type="text/javascript" src="../../js/editProfile.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+	var $pic = $('#picture'),
+		context = $pic.get(0).getContext('2d');
+
+	$('#img').on('change',function(){
+		
+		if (this.files && this.files[0]) {
+
+			if ( this.files[0].type.match(/^image\//) ) {
+			
+				var reader = new FileReader();
+
+				reader.onload = function(e){					
+					var img = new Image();
+					img.onload = function() {						
+						context.canvas.width = img.width;
+						context.canvas.height = img.height;
+						context.drawImage(img, 0, 0);
+					};
+					img.src = e.target.result;
+				};
+
+				reader.readAsDataURL(this.files[0]);
+
+
+			} else {
+				alert('Invalid file type');
+			}
+		} else {
+			alert('Please select a file.');
+		}
+	});
+
+});
+	</script>
 </body>
 </html>

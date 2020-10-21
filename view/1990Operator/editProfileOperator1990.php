@@ -23,7 +23,9 @@
 				<table class="info">
 					<tr>
 						<td class="proPic">
-							<img src="../../img/admin.jpg">
+							<canvas class="picture" id="picture">
+								
+							</canvas>
 						</td>
 						<td class="labels">
 							<label>First Name</label><br>

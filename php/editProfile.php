@@ -14,7 +14,7 @@
 		}
 	}
 
-	if (isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['password1']) || isset($_POST['password2']))
+	if (isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['password1']) && isset($_POST['password2']))
 	{		
 
 		$firstName=mysqli_real_escape_string($connection,$_POST['firstName']);

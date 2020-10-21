@@ -14,6 +14,15 @@ body{
 	display: none;
 }
 
+.proPic .picture{
+	width: 25vw;
+	height: 25vw;
+	border-style: solid;
+  	border-width: 2px;
+  	border-color: black;
+  	background-color: rgb(192,192,192,0.6);
+}
+
 .breadcrum{
 	color: white;
 	background-color: rgb(128,0,0,0.9);
